@@ -8,7 +8,7 @@ gulp.task('server', ['styles'], function() {
     });
     gulp.watch('./app/**/*.html').on('change', browserSync.reload);
     // gulp.watch('./app/less/**/*.less', ['less']);
-    gulp.watch('./app/less/**/*.less', ['less']);
+    gulp.watch('./app/less/**/*.less', ['styles']);
 });
 
 gulp.task('styles', function() {
